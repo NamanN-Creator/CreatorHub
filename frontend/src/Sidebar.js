@@ -6,6 +6,8 @@ const NAV = {
     ['/dashboard', 'Dashboard'],
     ['/campaigns', 'Discover Campaigns'],
     ['/proposals', 'Proposals'],
+    ['/tasks', 'Tasks'],
+    ['/invoices', 'Earnings'],
   ],
   brand: [
     ['/dashboard', 'Dashboard'],
@@ -15,9 +17,11 @@ const NAV = {
   talent: [
     ['/dashboard', 'Dashboard'],
     ['/campaigns', 'Campaigns'],
+    ['/tasks', 'Tasks'],
   ],
   finance: [
     ['/dashboard', 'Dashboard'],
+    ['/invoices', 'Invoices'],
   ],
 };
 

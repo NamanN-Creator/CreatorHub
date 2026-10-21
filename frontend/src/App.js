@@ -7,6 +7,8 @@ import Dashboard from './pages/Dashboard';
 import Campaigns from './pages/Campaigns';
 import CampaignDetails from './pages/CampaignDetails';
 import Proposals from './pages/Proposals';
+import Tasks from './pages/Tasks';
+import Invoices from './pages/Invoices';
 
 // Logged-in pages: dark sidebar on the left, page content on the right.
 // If nobody is logged in this redirects to /login.
@@ -32,6 +34,8 @@ function AppRoutes() {
         <Route path="/campaigns" element={<PrivateRoute><Campaigns /></PrivateRoute>} />
         <Route path="/campaigns/:id" element={<PrivateRoute><CampaignDetails /></PrivateRoute>} />
         <Route path="/proposals" element={<PrivateRoute><Proposals /></PrivateRoute>} />
+        <Route path="/tasks" element={<PrivateRoute><Tasks /></PrivateRoute>} />
+        <Route path="/invoices" element={<PrivateRoute><Invoices /></PrivateRoute>} />
         <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} />} />
       </Routes>
     </BrowserRouter>
