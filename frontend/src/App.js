@@ -4,6 +4,9 @@ import Sidebar from './Sidebar';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Campaigns from './pages/Campaigns';
+import CampaignDetails from './pages/CampaignDetails';
+import Proposals from './pages/Proposals';
 
 // Logged-in pages: dark sidebar on the left, page content on the right.
 // If nobody is logged in this redirects to /login.
@@ -26,6 +29,9 @@ function AppRoutes() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+        <Route path="/campaigns" element={<PrivateRoute><Campaigns /></PrivateRoute>} />
+        <Route path="/campaigns/:id" element={<PrivateRoute><CampaignDetails /></PrivateRoute>} />
+        <Route path="/proposals" element={<PrivateRoute><Proposals /></PrivateRoute>} />
         <Route path="*" element={<Navigate to={user ? '/dashboard' : '/login'} />} />
       </Routes>
     </BrowserRouter>

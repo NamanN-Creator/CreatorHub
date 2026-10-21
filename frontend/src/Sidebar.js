@@ -4,12 +4,17 @@ import { useAuth } from './context/AuthContext';
 const NAV = {
   creator: [
     ['/dashboard', 'Dashboard'],
+    ['/campaigns', 'Discover Campaigns'],
+    ['/proposals', 'Proposals'],
   ],
   brand: [
     ['/dashboard', 'Dashboard'],
+    ['/campaigns', 'Campaigns'],
+    ['/proposals', 'Proposals'],
   ],
   talent: [
     ['/dashboard', 'Dashboard'],
+    ['/campaigns', 'Campaigns'],
   ],
   finance: [
     ['/dashboard', 'Dashboard'],
